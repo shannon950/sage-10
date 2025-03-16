@@ -1,0 +1,44 @@
+.pagination .navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .navigation .nav-links .current {
+    display: inline-flex;
+    border: 2px solid #0072BC;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+    padding: 15px !important;
+    font-weight: 500 !important;
+}
+
+.pagination .navigation .nav-links .page-numbers {
+    color: grey;
+    padding: 0 5px;
+}
+
+.pagination .navigation .nav-links .page-numbers:hover {
+    font-weight: 600;
+}
+
+.pagination .navigation .nav-links .prev, .pagination .navigation .nav-links .next { 
+    color: black;
+}
+
+.pagination .navigation .nav-links .prev::after {
+    content: "➔";
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.pagination .navigation .nav-links .next::after {
+    content: "➔"; 
+}
+
+.news_archive .grid article a div button {
+    color: #0072BC;
+}

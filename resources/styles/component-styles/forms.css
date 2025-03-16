@@ -1,0 +1,71 @@
+
+/* Forms */
+
+.gform-body label {
+    font-weight: 500 !important;
+    @apply !text-base;
+}
+
+.gform-body input, .gform-body textarea {
+    border-bottom: 1px solid grey;
+}
+
+.gfield input:focus, .gfield textarea:focus {
+    outline: none !important;
+}
+
+.gfield textarea {
+    resize: none;
+    max-height: 100px;
+}
+
+.gform_footer .button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    @apply text-base;
+}
+
+@media (min-width: 768px){
+    .gform_footer {
+        max-width: 300px; 
+    }
+}
+
+.gform_button {
+    padding: 10px 0 10px 30px !important;
+    text-align: left; 
+}
+
+@media (min-width: 768px){
+    .gform_button {
+        padding: 20px 0 20px 30px !important;
+        text-align: left; 
+    }
+}
+
+.gform_footer .button:hover, .gform_footer .button:focus {
+    @apply bg-grey;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.gform_wrapper.gravity-theme .ginput_container_address span {
+    flex: 0 0 100%;
+}
+
+.gform_wrapper.gravity-theme .ginput_container_address select {
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.gform-body legend {
+    font-weight: 500 !important;
+    @apply !text-base;
+    padding-top: 0.2rem !important;
+}

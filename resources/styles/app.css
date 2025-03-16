@@ -1,0 +1,46 @@
+@import './component-styles/footer.css';
+@import './component-styles/header.css';
+@import './component-styles/forms.css';
+@import './component-styles/map.css';
+@import './component-styles/hero.css';
+@import './component-styles/pagination.css';
+@import './component-styles/carousel.css';
+@import './component-styles/careers-iframe.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL STYLES */
+
+html {
+    font-size: 18px;
+}
+
+/* Fonts */
+@font-face {
+    src: url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-700.woff2") format("woff2"), url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-700.woff") format("woff");
+    font-family: "ITCAvantGardeGothic";
+    font-weight: 700;
+}
+
+@font-face {
+    src: url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-600.woff2") format("woff2"), url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-600.woff") format("woff");
+    font-family: "ITCAvantGardeGothic";
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-500.woff2") format("woff2"), url("../fonts/itc-avant-garde-gothic/itc-avant-garde-gothic-500.woff") format("woff");
+    font-family: "ITCAvantGardeGothic";
+    font-weight: 500;
+}
+
+/* Custom Global Styles */
+body {
+  font-family: 'ITCAvantGardeGothic', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}

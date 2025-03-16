@@ -1,0 +1,31 @@
+/* Pagination for Carousel Block */
+
+.swiper-pagination-bullet {
+    @apply !bg-white;
+    opacity: 1 !important;
+    height: 10px !important;
+    width: 10px !important;
+    padding: 5px;
+}
+
+.swiper-pagination-bullet-active {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    background-color: transparent !important;
+    position: relative;
+    top: 5px;
+}
+
+.swiper-pagination-bullet-active::after {
+    display: block;
+    content: "";
+    @apply bg-white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

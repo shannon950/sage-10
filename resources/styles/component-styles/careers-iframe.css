@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+/*  This stylsheet was provided by Lonestar for inner iframe styling, empty classes/attributes have been removed */
+#gnewtonIframe {
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    #gnewtonIframe {
+        padding: 0 4rem;
+    }
+}
+@media (min-width: 1025px) {
+    #gnewtonIframe {
+        padding: 0 10rem;
+    }
+}
+
+/* Remove jobid location etc from the job description page. */
+#gnewtonJobDescription #gnewtonJobPosition,
+#gnewtonJobDescription #gnewtonJobLocation,
+#gnewtonJobDescription #gnewtonJobID,
+#gnewtonJobDescription #gnewtonJobOpening,
+#gnewtonJobDescription hr,
+td#gnewtonJobLocationInfo {
+  display: none;
+}
+#gnewtonJobDescription {
+  width: 100%;
+}
+
+/* Remove application code box for returning applicants to online form. */
+#gnewtonApplicationBox * {
+  display: none;
+}
+
+/* Remove incorrect veteran status boxes on bottom of online application form. */
+#veteran31,
+#veteran32,
+#veteran33,
+#veteran34 {
+  margin-left: 40px;
+}
+
+/* Make sure that images and labels display properly. */
+label {
+  display: inline;
+}
+
+img {
+  display: inline;
+}
+
+/* Increased spacing for generic resume submission. */
+#gnewtonGeneric td {
+  padding-top: 20px !important;
+}
+
+/* Match fonts for the main page and submission page. */
+#gnewtonCareerBody * {
+  color: #000;
+  font-family: 'Signika';
+  font-size: 14px;
+  line-height: 23px;
+}
+
+#gnewtonLandingArea * {
+  color: #000;
+  font-family: 'Signika';
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.gnewtonCareerGroupHeaderClass {
+  color: #000 !important;
+  font-family: 'Signika' !important;
+  font-size: 17px !important;
+  line-height: 25px !important;
+  font-weight: bold;
+}
+
+/* Match fonts for the links. */
+#gnewtonCareerBody a,
+#gnewtonLandingArea a,
+div#backToCareerHome a,
+#gnewtonLogo a.newton_policy {
+  color: #0072bc;
+
+  text-decoration: underline;
+}
+
+#gnewtonCareerBody a:hover,
+#gnewtonLandingArea a:hover,
+div#backToCareerHome a:hover {
+  color: #0072bc;
+  text-decoration: none;
+}
+
+/* Fix the Clear All Fields link. Set width to 100 or 115px if wrapping occurs. */
+.button.newtonStoreReset.block {
+  color: rgb(52, 152, 219) !important;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button.newtonStoreReset.block:hover {
+  color: rgb(136, 189, 229) !important;
+}
+
+/* Fix Job Search Buttons */
+select#gnewtonLocation,
+select#gnewtonDepartment {
+  width: 100%;
+}
+
+/* Fix Choose a File link. */
+label#resumeDropLocalFile {
+  color: #3498db;
+}
+
+/* Fix filename in uploaded resume blue box. */
+#resumeDropped span.filename {
+  color: white;
+}
+
+/* Hide department and location sort labels */
+.gnewtonSortByJob {
+  display: none !important;
+}
+
+.gnewtonSortByLocationOrDepartment {
+  display: none !important;
+}
+
+/* Fix remove link in uploaded resume blue box. */
+#resumeDropped .bar .closeBtn {
+  color: #aed6f1 !important;
+  text-decoration: none;
+}
+
+/* Bold section titles. */
+dt.gnewtonSectionTitleClass {
+  font-weight: bold;
+}
+
+/* Bold all p inside the application. */
+#gnewtonResumeFormTable p {
+  font-weight: bold;
+}
+
+/* Un-bold the Applicant's Statement section. */
+#gnewtonAppState p {
+  font-weight: normal;
+}
+
+/* Reposition the "Yes" and "No" inside the Min Qual buttons. */
+td.gnewtonQuestions div {
+  line-height: 25px !important;
+}
+
+/* Fix colors on attachment upload links. */
+label.emptyFileInput {
+  color: #3498db !important;
+}
+
+label.emptyFileInput:hover {
+  color: #88bde5 !important;
+}
+
+/* Bold uploaded attachment names. */
+div.filledFileInput span {
+  font-weight: bold;
+}
+
+/* Change Newton button colors to match. */
+#gnewtonCareerBody div.gnewtonBlueBtn,
+#gnewtonCareerBody button.gnewtonBlueBtn,
+div.gnewtonContinueBtn {
+  background-color: #0072bc !important;
+  border-radius: 0px !important;
+  font-family: 'Signika' !important;
+  text-align: center !important;
+}
+
+#gnewtonCareerBody div.gnewtonBlueBtn:hover,
+#gnewtonCareerBody button.gnewtonBlueBtn:hover,
+div.gnewtonContinueBtn:hover {
+  text-decoration: underline !important;
+}
+
+#gnewtonCareerBody div.gnewtonBlueBtn.disabled,
+div#saveBtn.disabled,
+#gnewtonCareerBody button.gnewtonBlueBtn.disabled,
+#gnewtonCareerBody div.gnewtonBlueBtn[disabled],
+#gnewtonCareerBody button.gnewtonBlueBtn[disabled] {
+  background: #ccd3d8 !important;
+}
+
+/* Adjust Indeed button colors to match. */
+#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget > a {
+  background: #3498db !important;
+}
+
+#gnewtonCareerBody
+  #gnewtonJobDescriptionBtn
+  > div
+  > .indeed-apply-widget
+  > a
+  > span
+  > span {
+  color: white !important;
+}
+
+#gnewtonCareerBody
+  #gnewtonJobDescriptionBtn
+  > div
+  > .indeed-apply-widget.indeed-apply-status-applied#indeed-apply-widget
+  > a:hover {
+  background: #88bde5 !important;
+}
+
+/* Adjust vertical alignment on EEO VEVRAA options. */
+form#gnewton-vevraa-form span.radio-label {
+  top: 0px !important;
+  position: relative;
+}
+
+/* Fix search button text alignment. */
+div#gnewtonSearchBtn {
+  line-height: 18px;
+}
+
+div#gnewtonCareerBody {
+  margin: auto !important;
+}
+
+input[type='checkbox'] {
+  padding: 5px;
+}
+
+/*STYLING FOR MOBILE EXPERIENCE */
+@media only screen and (max-width: 500px) {
+  table.gnewtonJobFilter tr,
+  tbody,
+  td {
+    display: block;
+  }
+
+  input#gnewtonKeyword {
+    margin-bottom: 5px !important;
+  }
+  .gnewtonCareerGroupRowClass {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  .gnewtonJobLink a,
+  .gnewtonJobLink a:visited,
+  .gnewtonJobNode a,
+  .gnewtonJobNode a:visited,
+  .gnewtonNode a,
+  .gnewtonNode a:visited,
+  .gnewtonCareerGroupJobTitleClass a,
+  .gnewtonCareerGroupJobTitleClass {
+    white-space: normal !important;
+  }
+
+  #gnewtonCareerBody * {
+    font-size: 15px !important;
+  }
+
+  #gnewtonJobDescriptionText td {
+    height: 100% !important;
+  }
+}
+
+.intro_copy a {
+  color: #0072bc;
+  text-decoration: underline;
+}

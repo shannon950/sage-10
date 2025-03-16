@@ -1,0 +1,173 @@
+/* NEW MAP */
+.block-map {
+    background: #0E1E37;
+}
+
+
+.map-region {
+    position: relative;
+    z-index: 10;
+    /* border-color: #beb7ac; */
+}
+
+.world-map,
+.marker-location {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .world-map,
+    .marker-location {
+        display: block;
+    }
+}
+
+/* Dont use tailwind hidden as is add important to display, then you would need to add more specificity to your other classes... */
+.hide-item {
+    display: none;
+}
+
+.show-item {
+    display: block;
+}
+
+.marker-location.active {
+    z-index: 30 !important;
+}
+
+.marker-pin,
+.marker-pin-cluster-icon {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B2ABA0;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation-name: colorChange;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+
+.marker-pin::before,
+.marker-pin-cluster-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #B2ABA0;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    animation-name: shrinkColorChange;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-delay: inherit;
+}
+
+.marker-location.active .marker-pin {
+    animation-name: none;
+    width: 22px;
+    height: 22px;
+    border-style: solid;
+    border-color: #A48942;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+.marker-location.active .marker-pin::before {
+    animation-name: none;
+    width: 12px;
+    height: 12px;
+    background: #A48942;
+}
+
+.marker-pin-cluster {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 10px 10px 10px 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.marker-pin-cluster-text {
+    font-size: 14px;
+    color: #000;
+    line-height: 1;
+}
+
+@keyframes shrinkColorChange {
+
+    0% {
+        background-color: #B2ABA0;
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+
+    100% {
+        background-color: #A48942;
+        transform: translate(-50%, -50%) scale(0.25);
+    }
+}
+
+@keyframes colorChange {
+
+    0% {
+        border-color: #B2ABA0;
+    }
+
+    100% {
+        border-color: #A48942;
+    }
+}
+
+/* Mobile styles */
+.continent-marker-container {
+    background-color: #15253F;
+}
+
+.marker-info {
+    display: none;
+}
+
+.marker-logo.open .marker-info {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .marker-info {
+        display: block;
+    }
+
+    .expand-icon-map {
+        display: none;
+    }
+}
+
+.expand-icon-map-mobile::before {
+    content: '+';
+    font-size: 1.5rem;
+}
+
+.open.expand-icon-map-mobile::before {
+    content: '-';
+}
+
+.marker-logo.open .expand-icon-map-mobile::before {
+    content: '-';
+}

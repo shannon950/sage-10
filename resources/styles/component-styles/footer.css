@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ACF OVERRIDES */
+
+/* Footer Menu */
+#menu-footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+  
+@media (min-width: 768px) {
+  #menu-footer-menu {
+    gap: 3rem;
+  }
+}
+  
+#menu-footer-menu li a {
+  font-size: 1rem;
+}
+  
+.menu-footer-menu-container #menu-footer-menu .menu-item a {
+  @apply !text-black;
+}
+
+.footer-nested-item div ul li a {
+  font-size: 0.89rem !important;
+}
+  
+@media (min-width: 768px) {
+  .footer-nested-item div ul li a {
+    font-size: 1rem !important;
+  }
+}
+  
+@media (min-width: 768px) {
+  #menu-footer-menu {
+    gap: 2.5rem;
+  }
+}
+
+.expand-icon-footer::before {
+  content: '+'; 
+}
+
+.retract-icon-footer::before {
+  content: '-';
+  font-size: 2.25rem !important;
+}
+
+@media (min-width: 768px){
+  .expand-icon-footer::before {
+      display: none; 
+  }
+  .retract-icon-footer::before {
+      display: none; 
+  }
+}
+
+.footer-nested-item .acf-nav-menu ul li:hover {
+  font-weight: 600;
+}
